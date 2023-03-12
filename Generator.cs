@@ -14,18 +14,18 @@ using System.Threading.Tasks;
         public string getUsername()
         {
 
-            string userName;    //declares the userName variable,
+            string userName;    //Declares the userName variable,
 
-                do   //loops until a valid name is entered,
+                do   //Loops until a valid name is entered,
                 {
-                    Console.WriteLine("Enter your First and Second name"); //prompts the user to enter a first and second name.
-                    userName = Console.ReadLine(); //reads the users input and stores it in the userName Variable.
+                    Console.WriteLine("Enter your First and Second name"); //Prompts the user to enter a first and second name.
+                    userName = Console.ReadLine(); //Reads the users input and stores it in the userName Variable.
                 }
                 while (!IsValidName(userName) == true);
             
-                Console.WriteLine($"Your Email is {EmailBuilder(userName)}");  //if a valid name is entered, the email is constructed from the EmailBuilder Method and prints it.
+                Console.WriteLine($"Your Email is {EmailBuilder(userName)}");  //If a valid name is entered, the email is constructed from the EmailBuilder Method and prints it.
 
-                return getUsername(); //calls the getUsername Method returns the result.
+                return getUsername(); //Calls the getUsername Method returns the result.
         }
 
         /// <summary>
@@ -67,7 +67,7 @@ using System.Threading.Tasks;
                 }
             }
 
-            return true; // returns true if no errors are found in the userName.
+            return true; // Returns true if no errors are found in the userName.
         }
 
 
@@ -78,7 +78,7 @@ using System.Threading.Tasks;
         /// <returns></returns>
         public string EmailBuilder(string userName)
         {
-            string dAndA = "@dundeeandanguscollege.ac.uk"; //declares the string dAndA and assigns its data.
+            string dAndA = "@dundeeandanguscollege.ac.uk"; //Declares the string dAndA and assigns its data.
 
             userName.Trim(); //Removes spaces from the the start and end of the userName.
 
